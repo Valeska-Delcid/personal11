@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de tu página</title>
+    <!-- Enlace opcional a tu archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Enlace a una biblioteca de iconos (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Estilos en línea para el ejemplo */
+        header {
+            background-color: #FF97D8; /* Color de fondo del encabezado */
+            color: #000000; /* Color del texto del encabezado */
+            padding: 20px; /* Espaciado interno del encabezado */
+            display: flex; /* Para alinear elementos horizontalmente */
+            justify-content: space-between; /* Espacio entre elementos */
+            align-items: center; /* Centrar verticalmente */
+            flex-direction: column; /* Para que los elementos se apilen verticalmente */
+        }
+        header h1 {
+            font-family: Arial, sans-serif; /* Cambia la fuente */
+            font-size: 50px; /* Tamaño de la fuente aumentado */
+            margin: 0; /* Elimina el margen para centrar mejor */
+            text-align: center; /* Alineación centrada */
+        }
+        header img {
+            width: 150px; /* Ancho del logo */
+            height: auto; /* Altura automática para mantener la proporción */
+            margin-bottom: 20px; /* Espacio inferior */
+        }
+        nav ul {
+            list-style-type: none; /* Quitar viñetas de la lista */
+            padding: 0;
+            margin: 0;
+            display: flex; /* Alinear elementos horizontalmente */
+        }
+        nav ul li {
+            margin-right: 20px; /* Espacio entre elementos */
+        }
+        nav ul li a {
+            color: white; /* Color del texto del enlace */
+            text-decoration: none; /* Quitar subrayado del enlace */
+            padding: 15px 20px; /* Añadir espacio alrededor del texto */
+            border-radius: 5px; /* Añadir esquinas redondeadas */
+            transition: background-color 0.3s; /* Transición suave */
+            font-size: 24px; /* Tamaño de la fuente */
+        }
+        nav ul li a:hover {
+            background-color: #EBCCFC; /* Cambiar el color de fondo al pasar el mouse */
+        }
+        footer {
+            background-color: #FF97D8; /* Color de fondo del pie de página */
+            color: white; /* Color del texto del pie de página */
+            padding: 10px 20px; /* Espaciado interno del pie de página */
+            text-align: center; /* Alineación centrada */
+        }
+        footer p {
+            margin-bottom: 10px; /* Espacio inferior */
+        }
+        .redes-sociales a {
+            color: #1A2227; /* Color de los iconos */
+            margin: 0 10px; /* Espacio horizontal entre iconos */
+            font-size: 24px; /* Tamaño del icono */
+            transition: color 0.3s; /* Transición suave del color */
+        }
+        .redes-sociales a:hover {
+            color: #EBCCFC; /* Cambiar color al pasar el mouse */
+        }
+        .centered-text {
+            text-align: center;
+            font-size: 40px; /* Tamaño de la fuente aumentado */
+            margin-top: 20px; /* Espacio superior */
+        }
+        .animated-section {
+            font-size: 22px; /* Tamaño de la fuente aumentado */
+            animation: fadeIn 3s ease-in-out infinite alternate; /* Animación aplicada */
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de tu página</title>
+    <!-- Enlace opcional a tu archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Enlace a una biblioteca de iconos (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Estilos en línea para el ejemplo */
+        header {
+            background-color: #FF97D8; /* Color de fondo del encabezado */
+            color: #000000; /* Color del texto del encabezado */
+            padding: 20px; /* Espaciado interno del encabezado */
+            display: flex; /* Para alinear elementos horizontalmente */
+            justify-content: space-between; /* Espacio entre elementos */
+            align-items: center; /* Centrar verticalmente */
+            flex-direction: column; /* Para que los elementos se apilen verticalmente */
+        }
+        header h1 {
+            font-family: 'Great Vibes', cursive; /* Cambia la fuente */
+            font-size: 50px; /* Tamaño de la fuente aumentado */
+            margin: 0; /* Elimina el margen para centrar mejor */
+            text-align: center; /* Alineación centrada */
+        }
+        header img {
+            width: 150px; /* Ancho del logo */
+            height: auto; /* Altura automática para mantener la proporción */
+            margin-bottom: 20px; /* Espacio inferior */
+        }
+        nav ul {
+            list-style-type: none; /* Quitar viñetas de la lista */
+            padding: 0;
+            margin: 0;
+            display: flex; /* Alinear elementos horizontalmente */
+        }
+        nav ul li {
+            margin-right: 20px; /* Espacio entre elementos */
+        }
+        nav ul li a {
+            color: white; /* Color del texto del enlace */
+            text-decoration: none; /* Quitar subrayado del enlace */
+            padding: 15px 20px; /* Añadir espacio alrededor del texto */
+            border-radius: 5px; /* Añadir esquinas redondeadas */
+            transition: background-color 0.3s; /* Transición suave */
+            font-size: 24px; /* Tamaño de la fuente */
+        }
+        nav ul li a:hover {
+            background-color: #EBCCFC; /* Cambiar el color de fondo al pasar el mouse */
+        }
+        footer {
+            background-color: #FF97D8; /* Color de fondo del pie de página */
+            color: white; /* Color del texto del pie de página */
+            padding: 10px 20px; /* Espaciado interno del pie de página */
+            text-align: center; /* Alineación centrada */
+        }
+        footer p {
+            margin-bottom: 10px; /* Espacio inferior */
+        }
+        .redes-sociales a {
+            color: #1A2227; /* Color de los iconos */
+            margin: 0 10px; /* Espacio horizontal entre iconos */
+            font-size: 24px; /* Tamaño del icono */
+            transition: color 0.3s; /* Transición suave del color */
+        }
+        .redes-sociales a:hover {
+            color: #EBCCFC; /* Cambiar color al pasar el mouse */
+        }
+        .centered-text {
+            text-align: center;
+            font-size: 40px; /* Tamaño de la fuente aumentado */
+            margin-top: 20px; /* Espacio superior */
+        }
+        .animated-section {
+            font-size: 22px; /* Tamaño de la fuente aumentado */
+            animation: fadeIn 3s ease-in-out infinite alternate; /* Animación aplicada */
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenidos a Alexandra Fashion</h1>
+    <!-- Cambia "C:\Users\alexa\Downloads\fashion-logo-design-template-c8545e8dec8c50c75d1b62721f3e1bc3_screen.jpg" por la ruta de tu logo -->
+    <img src="C:\Users\alexa\Downloads\logotipo marca personal mujer emprendedora elegante minimalista moderno tipografico color negro y rosa.png" alt="Logo de tu empresa">
+    <nav>
+        <ul>
+             <li><a href="inicio1.html" style="font-size: 24px;">Inicio</a></li>
+            <li><a href="conocenos.html" style="font-size: 24px;">Conócenos</a></li>
+            <li><a href="servicios.html" style="font-size: 24px;">Servicios</a></li>
+            <li><a href="contacto.html" style="font-size: 24px;">Contáctanos</a></li>
+  <li><a href="compras.html" style="font-size: 24px;">Compras</a></li>
+
+            <!-- Agrega más elementos de lista según sea necesario -->
+
+        </ul>
+    </nav>
+</header>
+
+
+<footer>
+    <!-- Aquí puedes agregar el texto del pie de página -->
+    <p>Síguenos en nuestras redes sociales:</p>
+    <!-- Agrega enlaces a tus perfiles de redes sociales -->
+    <div class="redes-sociales">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <!-- Agrega más iconos de redes sociales según sea necesario -->
+    </div>
+    <p>&copy; Mi sitio web 2024</p>
+</footer>
+ <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const productName = urlParams.get('product');
+        const productPrice = urlParams.get('price');
+
+        document.getElementById('product-name').textContent = `Producto: ${productName}`;
+        document.getElementById('product-price').textContent = `Precio: ${productPrice}`;
+
+        document.getElementById('pay-button').addEventListener('click', () => {
+            alert('Redirigiendo a la página de pago...');
+        });
+    </script>
+
+</body>
+</html>
+

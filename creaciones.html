@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creaciones - Mi Sitio Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #F0F8FF; /* Fondo azul muy claro */
+        }
+
+        header {
+            background-color: #9370DB; /* Color morado suave */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            text-transform: uppercase; /* Convertir el texto a mayúsculas */
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas automáticas con tamaño mínimo y máximo */
+            grid-gap: 1rem; /* Espacio entre las imágenes */
+            justify-items: center; /* Centrar horizontalmente las imágenes */
+            margin-top: 2rem;
+        }
+
+        .image-container {
+            position: relative; /* Contenedor relativo para posicionar el texto */
+            width: 250px; /* Ancho fijo para todos los contenedores de imagen */
+            height: 250px; /* Altura fija para todos los contenedores de imagen */
+            overflow: hidden; /* Ocultar el desbordamiento */
+        }
+
+        .image-container img {
+            width: 100%; /* Ajustar la imagen al ancho del contenedor */
+            height: 100%; /* Ajustar la imagen a la altura del contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+            transition: transform 0.3s ease; /* Transición suave */
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05); /* Zoom al pasar el mouse */
+        }
+
+        .image-caption {
+            position: absolute; /* Posición absoluta para el texto */
+            bottom: 0; /* Alinear el texto en la parte inferior */
+            left: 0; /* Alinear el texto a la izquierda */
+            width: 100%; /* Ancho completo */
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+            color: white; /* Color de texto blanco */
+            padding: 0.5rem; /* Espaciado interno */
+            border-bottom-left-radius: 8px; /* Bordes redondeados inferiores izquierdos */
+            border-bottom-right-radius: 8px; /* Bordes redondeados inferiores derechos */
+            opacity: 0; /* Ocultar el texto por defecto */
+            transition: opacity 0.3s ease; /* Transición suave de opacidad */
+        }
+
+        .image-container:hover .image-caption {
+            opacity: 1; /* Mostrar el texto al pasar el mouse sobre la imagen */
+        }
+
+        footer {
+            background-color: #9370DB; /* Color morado suave */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creaciones</h1>
+    </header>
+
+    <main>
+        <div class="image-gallery">
+            <div class="image-container">
+                <img src="https://i.pinimg.com/736x/24/f8/07/24f80707e23e937e9cb52c00fe345774.jpg" alt="Creación 1">
+                <div class="image-caption">Ropa Clasica </div>
+            </div>
+            <div class="image-container">
+                <img src="https://i.pinimg.com/736x/fb/cc/bc/fbccbc833e2c54ec5f152fad2249ff0c.jpg" alt="Creación 2">
+                <div class="image-caption">Vestido de Noche </div>
+            </div>
+            <div class="image-container">
+                <img src="https://i.pinimg.com/736x/d3/49/b6/d349b6dac00b941df78760a6df2b9801.jpg" alt="Creación 3">
+                <div class="image-caption">Vestidos de 15 años </div>
+            </div>
+            <div class="image-container">
+                <img src="https://i.pinimg.com/564x/96/5f/34/965f34107ea5e643f7959b10b989c646.jpg" alt="Creación 4">
+                <div class="image-caption">Vestido de noche </div>
+            </div>
+            <div class="image-container">
+                <img src="https://i.pinimg.com/736x/4e/eb/9d/4eeb9dfc87843378b5c9141334d7fda8.jpg" alt="Creación 5">
+                <div class="image-caption">Ropa Clasica </div>
+            </div>
+            <div class="image-container">
+                <img src="https://i.pinimg.com/736x/72/27/c5/7227c5619b16ce25876f47b65765fb71.jpg" alt="Creación 6">
+                <div class="image-caption">Vestidos Clasico </div>
+            </div>
+            <div class="image-container">
+                <img src="https://i.pinimg.com/736x/86/36/bc/8636bc8a3b2ec95af97bb55a7418c899.jpg" alt="Creación 7">
+                <div class="image-caption">Vestidos Clasico</div>
+            </div>
+            <div class="image-container">
+                <img src="https://i.pinimg.com/564x/dc/5d/fd/dc5dfde45585a6406ea293842a5b24da.jpg" alt="Creación 8">
+                <div class="image-caption">Ropa de moda</div>
+            </div>
+            <div class="image-container">
+                <img src="https://i.pinimg.com/736x/c4/ad/24/c4ad247bb6227ead6ccdc34a35b50ab2.jpg" alt="Creación 9">
+                <div class="image-caption">Ropa de moda</div>
+            </div>
+            <div class="image-container">
+                <img src="https://i.pinimg.com/736x/d4/28/d9/d428d9fdd750660c64a82a8febb10075.jpg" alt="Creación 10">
+                <div class="image-caption">Vestido de Noche</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </body>
+</html>
